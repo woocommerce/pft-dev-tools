@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: WP CLI Trigger Hook
-Description: A plugin with a set of utilities is used to develop the product form template system.
+Plugin Name: PFT Dev Tools
+Description: A plugin with a set of utilities to help with development of the Product Form Template feature.
 Version: 0.0.2-dev
 Author: retrofox
 */
