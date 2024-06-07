@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP CLI Trigger Hook
 Description: A plugin with a set of utilities is used to develop the product form template system.
-Version: 0.0.1-dev
+Version: 0.0.2-dev
 Author: retrofox
 */
 
