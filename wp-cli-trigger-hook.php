@@ -79,6 +79,9 @@ class Trigger_Hook_Command {
  * Enable `product-editor-template-system` feature in WooCommerce
  */
 add_filter( 'woocommerce_admin_features', function ( $features ) {
-    $features[] = 'product-editor-template-system';
+    if ( ! in_array( 'product-editor-template-system', $features ) ) {
+        $features[] = 'product-editor-template-system';
+    }
+
     return $features;
 } );
