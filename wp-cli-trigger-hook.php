@@ -21,7 +21,7 @@ class Trigger_Hook_Command {
      * 
      * ## OPTIONS
      * 
-     * <action>
+     * <hook-name>
      * : The name of the hook to trigger.
      * 
      * [--action=<action>]
