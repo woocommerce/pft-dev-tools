@@ -1,2 +1,12 @@
 # pft-dev-tools
-Temporary plugin to use for testing/development purporses of the Product Form Template system 
+A plugin with a set of utilities is used to develop the product form template system.
+
+## WP-CLI commands
+
+### `trigger`
+
+Trigger a WordPress hook manually.
+
+```sh
+wp trigger upgrader_process_complete 
+```
