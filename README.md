@@ -1,9 +1,10 @@
 # pft-dev-tools
 A plugin with a set of utilities is used to develop the product form template system.
 
-## `product-editor-template-system` feature flag
+## Features
 
-The plugin enables the `product-editor-template-system` by default.
+* `product-editor-template-system` feature flag enabled by default
+* Add [WP CLI commands](#wp-cli-commands)
 
 ## WP-CLI commands
 
