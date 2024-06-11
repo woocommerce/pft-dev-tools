@@ -33,6 +33,17 @@ class Trigger_Hook_Command {
      *  - update
      *  - delete
      * ---
+     * 
+     * [--type=<type>]
+     * : Type of update process.
+     * ---
+     * default: plugin
+     * options:
+     *  - plugin
+     *  - theme
+     *  - core
+     *  - translation
+     * ---
      *
      * ## EXAMPLES
      * 
@@ -45,6 +56,7 @@ class Trigger_Hook_Command {
         $valid_actions = [ 'install', 'update', 'delete' ];
         $hook_name     = $args[ 0 ];
         $action        = $assoc_args[ 'action' ] ?? 'update';
+        $type          = $assoc_args[ 'type' ] ?? 'plugin';
 
         // check if it's a valid action
         if ( ! in_array( $action, $valid_actions ) ) {
@@ -61,7 +73,7 @@ class Trigger_Hook_Command {
 
             $options = array(
                 'action'  => $action,
-                'type'    => 'plugin',
+                'type'    => $type,
                 'plugins' => $plugins,
             );
 
