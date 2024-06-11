@@ -2,7 +2,7 @@
 /*
 Plugin Name: PFT Dev Tools
 Description: A plugin with a set of utilities to help with development of the Product Form Template feature.
-Version: 0.0.3-dev
+Version: 0.0.4-dev
 Author: retrofox
 */
 
@@ -48,7 +48,7 @@ class Trigger_Hook_Command {
      * ## EXAMPLES
      * 
      *    wp trigger woocommerce_after_update_option
-     *    wp trigger woocommerce_after_update_option --action=install
+     *    wp trigger woocommerce_after_update_option --action=install --type=plugin
      * 
      * @when after_wp_load
      */
@@ -90,10 +90,10 @@ class Trigger_Hook_Command {
 /*
  * Enable `product-editor-template-system` feature in WooCommerce
  */
-add_filter( 'woocommerce_admin_features', function ( $features ) {
-    if ( ! in_array( 'product-editor-template-system', $features ) ) {
-        $features[] = 'product-editor-template-system';
-    }
+// add_filter( 'woocommerce_admin_features', function ( $features ) {
+//     if ( ! in_array( 'product-editor-template-system', $features ) ) {
+//         $features[] = 'product-editor-template-system';
+//     }
 
-    return $features;
-} );
+//     return $features;
+// } );

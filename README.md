@@ -1,10 +1,6 @@
 # PFT Dev Tools
 A plugin with a set of utilities is used to develop the product form template system.
 
-## Features
-
-* `product-editor-template-system` feature flag enabled by default
-* Add [WP CLI commands](#wp-cli-commands)
 
 ## WP-CLI commands
 
@@ -31,9 +27,13 @@ Trigger a WordPress hook manually.
   - default: `update`
   - options: `install` | `update` | `delete`
 
+* `[--type=<type>]`: Type of update process.
+  - default: `plugin`
+  - options: `plugin` | `theme` | `core` | `translation`
+
 ### EXAMPLES
 
 ```sh
 wp trigger woocommerce_after_update_option
-wp trigger woocommerce_after_update_option --action=install
+wp trigger woocommerce_after_update_option --action=install --type=plugin
 ```
