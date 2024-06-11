@@ -2,7 +2,7 @@
 /*
 Plugin Name: PFT Dev Tools
 Description: A plugin with a set of utilities to help with development of the Product Form Template feature.
-Version: 0.0.2-dev
+Version: 0.0.3-dev
 Author: retrofox
 */
 
